@@ -5,11 +5,7 @@ version: 1.0.0
 author: "orchestrator (Jeremy Lee, Head of AEO/GEO Strategy), Entermind Malaysia Sdn Bhd"
 license: MIT
 platforms: [linux, macos, windows]
-metadata:
-  hermes:
-    tags: [aeo, geo, crawlability, robots-txt, llms-txt, ai-citation, publisher-screening, gptbot, claudebot, json-ld, sitemap, ssr, wix, cloudflare]
-    category: productivity
-    related_skills: [geo-prospect-pitch-development, enterrank-brand-visibility-audit, entercrawl-audit-pipeline]
+tags: [aeo, geo, crawlability, robots-txt, llms-txt, ai-citation, publisher-screening, gptbot, claudebot, json-ld, sitemap, ssr, wix, cloudflare]
 changelog:
   - "1.0.0 (2026-08-11): Initial skill. Codified from the GXS publisher screening session (2026-08-05): 14 SG publishers checked (Lobangsis, Suitesmile, MoneySmart, SingSaver, CompareSing, DiveDeals, Sethisfy, AsiaOne, The Edge, Lendingpot, Honeymoney, Mothership, Geek Culture, Vulcan Post). 8-step procedure, 5-tier ranking rubric, 10 pitfalls, worked example. Agent-agnostic: curl + python3 only, no profile/wiki/credential state."
 ---
