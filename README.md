@@ -12,6 +12,7 @@ kanban workers, delegate_task subagents, cron jobs) can load and run them.
 skills/
   <skill-name>/
     SKILL.md          # the skill (frontmatter + procedure + pitfalls)
+    README.md         # plain-language quick start (agent-agnostic)
     scripts/          # executable probes (curl + python3 only)
     references/       # deep-dive doctrine (added as skills mature)
 ```
