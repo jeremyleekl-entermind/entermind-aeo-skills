@@ -22,8 +22,8 @@ site, and does the site expose the structured signals (llms.txt, sitemap,
 JSON-LD, SSR text) that make it a viable AI citation source?
 
 This is the technical-access check. It answers "can AI engines cite this
-site?" — NOT "is this site visible on query X?" (that is the SOV scan in
-`geo-prospect-pitch-development`).
+site?" — NOT "is this site visible on query X?" (that is a separate
+share-of-voice scan, not this skill).
 
 ## When to use
 
@@ -37,7 +37,7 @@ site?" — NOT "is this site visible on query X?" (that is the SOV scan in
 
 ## The 8-step procedure
 
-1. **Pre-condition check (HC #14): reconcile the domain list.** Verify DNS
+1. **Pre-condition: reconcile the domain list.** Verify DNS
    via dns.google DoH (`https://dns.google/resolve?name=<domain>&type=A`),
    canonical host (www vs bare), and correct TLD. Wrong-domain traps seen
    in the wild: `lendingpot.com.sg` does not resolve (only `lendingpot.sg`
@@ -72,7 +72,7 @@ site?" — NOT "is this site visible on query X?" (that is the SOV scan in
 6. **Homepage.** Title, JSON-LD block count, visible-text chars, script
    bytes, SPA shell markers. Rule of thumb: SSR visible text > 5K chars
    with low script bytes = good. Heavy JS with thin SSR text = AI crawlers
-   will time out (Gospel: SSR is a table-stake).
+   will time out (SSR is a table-stake for AI crawlability).
 
 7. **Deep-page bot test.** Pull a REAL URL from the sitemap (never a
    guessed path — a 404 on a guess is not a bot block). Test with GPTBot,
@@ -162,7 +162,7 @@ crawlable article graph.
 ## Verification checklist
 
 - [ ] Every claim backed by a live fetch in this session (no carried-over
-      numbers — HC #16)
+      numbers — re-verify every count in the current run)
 - [ ] robots.txt fetched with at least 2 UAs (Chrome + 1 bot)
 - [ ] Deep-page test used a real sitemap URL, not a guessed path
 - [ ] 403s retried once before being classified as blocks
